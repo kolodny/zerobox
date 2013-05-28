@@ -1,13 +1,11 @@
-;(function (factory)
-{
+;(function (factory) {
 	if (typeof define === 'function' && define.amd) {
 		define(['jquery'], factory);
 	}
 	else {
 		factory(jQuery);
 	}
-}(function ($)
-{
+}(function ($) {
     $.fn.zerobox = function(options) {
         options = $.extend({
             preLoad: true,
