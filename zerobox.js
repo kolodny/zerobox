@@ -11,13 +11,8 @@ $.fn.zerobox = function(options) {
 
             var $img = $this.find('img'),
                 imgSrc = this.href,
-                offset = $img.offset(),
-                clonedImg = $img[0].cloneNode(),
-                imgWidth = $img.width(),
-                imgHeight = $img.height(),
-                imgFullWidth = clonedImg.width,
-                imgFullHeight = clonedImg.height;
-
+                offset = $img.offset();
+            
             var $zerobox = $('<div id="zerobox" title="click to close">')
                 .css({
                     position: 'fixed',
@@ -29,7 +24,6 @@ $.fn.zerobox = function(options) {
                     background: 'rgba(0, 0, 0, .75) url("' + imgSrc + '")',
                     backgroundRepeat: 'no-repeat',
                     backgroundPosition: 'center',
-                    backgroundSize: imgWidth + 'px ' + imgHeight + 'px',
                     cursor: 'pointer',
                     textAlign: 'center'
                 })
@@ -38,10 +32,7 @@ $.fn.zerobox = function(options) {
                     left: 0, top: 0, width: '100%', height: '100%'
                 });
                 
-            var $animatedDiv = $('<div>').css({width: imgWidth, height: imgHeight});
-            $animatedDiv.animate({width : imgFullWidth, height: imgFullHeight }, {step: function() {
-                $zerobox.css('backgroundSize', $animatedDiv.width() + 'px ' + $animatedDiv.height() + 'px');
-            }});
+            
         });
         if (options.preLoad) {
             $this.one('mouseover', function() {
