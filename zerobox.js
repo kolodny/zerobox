@@ -10,7 +10,8 @@
 {
     $.fn.zerobox = function(options) {
         options = $.extend({
-            preLoad: true
+            preLoad: true,
+            closeTooltip: 'Click to close'
         }, options);
 
         return this.each(function() {
@@ -47,7 +48,8 @@
                     css['backgroundSize'] = thumbWidth + 'px ' + thumbHeight + 'px';
                 }
 
-                var $zerobox = $('<div id="zerobox" title="click to close">')
+                var $zerobox = $('<div id="zerobox">')
+                    .attr('title', options.closeTooltip)
                     .css(css)
                     .click(function() { $zerobox.remove(); })
                     .appendTo(document.body).animate({
