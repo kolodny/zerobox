@@ -15,3 +15,5 @@ JS:
 
 
 # [DEMO](http://kolodny.github.io/0box.html)
+
+MIT license
