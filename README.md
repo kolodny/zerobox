@@ -12,3 +12,6 @@ HTML:
 JS:
    
     $('a.zerobox').zerobox();
+
+
+# [DEMO](http://kolodny.github.io/0box.html)
