@@ -21,7 +21,7 @@
             "url": "https://raw.github.com/kolodny/zerobox/master/LICENSE"
         }
     ],
-    "dependencies": {
+    "devDependencies": {
         "grunt": "0.4.1",
         "grunt-contrib-uglify": "0.2.0",
         "grunt-contrib-copy": "0.4.1",
