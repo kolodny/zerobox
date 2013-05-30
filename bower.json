@@ -1,0 +1,8 @@
+{
+    "name": "zerobox",
+    "version": "0.1.0",
+    "main": ["zerobox.js"],
+    "dependencies": {
+        "jquery": ">=1.7.0"
+    }
+}
