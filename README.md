@@ -5,6 +5,12 @@ zerobox
 
 Lightweight, animated lightbox plugin for [Jquery](http://jquery.com) JavaScript library.
 
+## Installing
+
+Using [Bower](http://bower.io/):
+
+    $ bower install zerobox
+
 ## Usage
 
 Getting Zerobox up and running is easy. The plugin only requires that include its source on your pages and give its method a link it will use to invoke the lightbox. A basic HTML snippet could look something like the following:
