@@ -21,32 +21,37 @@
 
                 var $img = $this.find('img'),
                     imgSrc = this.href,
-                    offset = $img.offset();
-
-                var css = {
-                    position: 'fixed',
-                    top: offset.top - $(window).scrollTop(),
-                    left: offset.left - $(window).scrollLeft(),
-                    height: $img.height(),
-                    width: $img.width(),
-                    zIndex: 1099,
-                    background: 'rgba(0, 0, 0, .75) url("' + imgSrc + '")',
-                    backgroundRepeat: 'no-repeat',
-                    backgroundPosition: 'center',
-                    cursor: 'pointer',
-                    textAlign: 'center'
-                };
+                    offset = $img.offset(),
+                    thumbWidth,
+                    thumbHeight,
+                    fullWidth,
+                    fullHeight,
+                    $animatedDiv,
+                    $zerobox,
+                    css = {
+                        position: 'fixed',
+                        top: offset.top - $(window).scrollTop(),
+                        left: offset.left - $(window).scrollLeft(),
+                        height: $img.height(),
+                        width: $img.width(),
+                        zIndex: 1099,
+                        background: 'rgba(0, 0, 0, .75) url("' + imgSrc + '")',
+                        backgroundRepeat: 'no-repeat',
+                        backgroundPosition: 'center',
+                        cursor: 'pointer',
+                        textAlign: 'center'
+                    };
 
                 if (preloadedImage) {
-                    var thumbWidth = $img.width(),
+                    thumbWidth = $img.width(),
                         thumbHeight = $img.height(),
                         fullWidth = preloadedImage.width,
                         fullHeight = preloadedImage.height;
 
-                    css['backgroundSize'] = thumbWidth + 'px ' + thumbHeight + 'px';
+                    css.backgroundSize = thumbWidth + 'px ' + thumbHeight + 'px';
                 }
 
-                var $zerobox = $('<div id="zerobox">')
+                $zerobox = $('<div id="zerobox">')
                     .attr('title', options.closeTooltip)
                     .css(css)
                     .click(function() { $zerobox.remove(); })
@@ -55,7 +60,7 @@
                     });
 
                 if (preloadedImage) {
-                    var $animatedDiv = $('<div>').css({width: thumbWidth, height: thumbHeight});
+                    $animatedDiv = $('<div>').css({width: thumbWidth, height: thumbHeight});
 
                     $animatedDiv.animate({width : fullWidth, height: fullHeight }, {step: function() {
                         $zerobox.css('backgroundSize', $animatedDiv.width() + 'px ' + $animatedDiv.height() + 'px');
