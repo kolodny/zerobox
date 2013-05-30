@@ -1,0 +1,39 @@
+{
+    "name": "zerobox",
+    "title": "zerobox",
+    "description": "Lightweight jQuery lightbox plugin",
+    "version": "0.1.0",
+    "homepage": "https://github.com/kolodny/zerobox",
+    "author": {
+        "name": "kolodny",
+        "url": "https://github.com/kolodny"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/kolodny/zerobox.git"
+    },
+    "bugs": {
+        "url": "https://github.com/kolodny/zerobox/issues"
+    },
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "https://raw.github.com/kolodny/zerobox/master/LICENSE"
+        }
+    ],
+    "dependencies": {
+        "grunt": "0.4.1",
+        "grunt-contrib-uglify": "0.2.0",
+        "grunt-contrib-copy": "0.4.1",
+        "grunt-contrib-jshint": "0.4.3",
+        "grunt-bumpup": "0.2.0"
+    },
+    "keywords": [
+        "jquery",
+        "lightbox",
+        "simple",
+        "lightweight",
+        "image",
+        "content"
+    ]
+}
