@@ -33,6 +33,6 @@ After which you can run Grunt tasks to do testing, releasing and building:
 
     $ grunt [task]
 
-Where ```[task]``` is the task you want to run. Available tasks are ```test```, ```build``` and ```release```.
+Where ```[task]``` is the task you want to run. Available tasks are ```test```, ```build``` and ```release [major|minor|patch|build]```.
 
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/kolodny/zerobox/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
