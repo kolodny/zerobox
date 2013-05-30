@@ -1,3 +1,9 @@
+/**
+ * Zerobox - Lightweight lightbox plugin for jQuery
+ *
+ * @link https://github.com/kolodny/zerobox
+ */
+
 ;(function (factory) {
 	if (typeof define === 'function' && define.amd) {
 		define(['jquery'], factory);
@@ -6,6 +12,18 @@
 		factory(jQuery);
 	}
 }(function ($) {
+
+    /**
+     * Renders the linked image in a lightbox.
+     *
+     * @param    {object}  options              Options
+     * @param    {boolean} options.preLoad      If TRUE, preloads any linked images
+     * @param    {string}  options.closeTooltip Tooltip text displayed when hovering over the background
+     * @return   this
+     * @class    zerobox
+     * @memberOf jQuery.fn
+     */
+
     $.fn.zerobox = function(options) {
         options = $.extend({
             preLoad: true,
