@@ -1,6 +1,8 @@
 zerobox
 =======
 
+Lightweight lightbox plugin for [Jquery](http://jquery.com) JavaScript library.
+
 ## Usage:
 
 HTML:
