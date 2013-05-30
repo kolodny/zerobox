@@ -3,6 +3,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-bumpup');
+    grunt.loadNpmTasks('grunt-jsdoc');
 
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
@@ -39,8 +40,17 @@ module.exports = function (grunt) {
             }
         },
 
-        bumpup : {
-            files : ['package.json', 'bower.json']
+        bumpup: {
+            files: ['package.json', 'bower.json']
+        },
+
+        jsdoc: {
+            dist: {
+                src: ['zerobox.js'],
+                options: {
+                    destination: 'docs'
+                }
+            }
         }
     });
 
