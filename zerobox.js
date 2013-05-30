@@ -1,4 +1,4 @@
-// more info @ https://github.com/kolodny/zerobox/
+// MIT LICENSE. More info @ https://github.com/kolodny/zerobox/
 
 ;(function(factory) {
     if (typeof define === 'function' && define.amd) {
