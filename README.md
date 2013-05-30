@@ -15,7 +15,7 @@ JS:
 
     $('a.zerobox').zerobox();
 
-# [DEMO](http://goo.gl/30rcg)
+## [DEMO](http://goo.gl/30rcg)
 
 MIT license
 
