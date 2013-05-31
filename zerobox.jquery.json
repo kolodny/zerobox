@@ -27,5 +27,5 @@
     "docs": "https://github.com/kolodny/zerobox",
     "demo": "http://goo.gl/30rcg",
     "bugs": "https://github.com/kolodny/zerobox/issues",
-    "download": "http://example.com/#path/to/latest/packaged/download/eg/zerobox-latest.min.js"
+    "download": "http://example.com/#dist/zerobox.min.js"
 }
