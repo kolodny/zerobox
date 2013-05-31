@@ -4,6 +4,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-bumpup');
     grunt.loadNpmTasks('grunt-jsdoc');
+    grunt.loadNpmTasks('grunt-tagrelease');
 
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
@@ -51,6 +52,14 @@ module.exports = function (grunt) {
                     destination: 'docs'
                 }
             }
+        },
+
+        tagrelease: {
+            file: 'package.json',
+            commit:  false,
+            message: 'Marks v%version%.',
+            prefix:  '',
+            annotate: true
         }
     });
 
@@ -71,5 +80,6 @@ module.exports = function (grunt) {
         grunt.task.run('bumpup:' + type);
         grunt.task.run('updatePackage');
         grunt.task.run('build');
+        grunt.task.run('tagrelease');
     });
 };
