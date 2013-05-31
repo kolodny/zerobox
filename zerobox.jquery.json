@@ -1,0 +1,31 @@
+{
+    "name": "zerobox",
+    "version": "0.1.0",
+    "title": "Zerobox",
+    "author": {
+        "name": "kolodny",
+        "url": "https://github.com/kolodny"
+    },
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "https://raw.github.com/kolodny/zerobox/master/LICENSE"
+        }
+    ],
+    "dependencies": {
+        "jquery": ">=1.7.0"
+    },
+    "description": "Lightweight, animated lightbox plugin",
+    "keywords": [
+        "lightbox",
+        "simple",
+        "lightweight",
+        "image",
+        "content"
+    ],
+    "homepage": "https://github.com/kolodny/zerobox",
+    "docs": "https://github.com/kolodny/zerobox",
+    "demo": "http://goo.gl/30rcg",
+    "bugs": "https://github.com/kolodny/zerobox/issues",
+    "download": "http://example.com/#path/to/latest/packaged/download/eg/zerobox-latest.min.js"
+}
