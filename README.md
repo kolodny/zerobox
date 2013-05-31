@@ -13,13 +13,13 @@ Using [Bower](http://bower.io/):
 
 ## Usage
 
-Getting Zerobox up and running is easy. The plugin only requires that include its source on your pages and give its method a link it will use to invoke the lightbox. A basic HTML snippet could look something like the following:
+Getting Zerobox up and running is easy. The plugin only requires that you include its source on your pages and give its method a link it will use to invoke the lightbox. A basic ligthbox image link could look something like the following:
 
     <a class="zerobox" href="image.jpg">
         <img src="image-thumb.jpg" />
     </a>
 
-After which you can target the ```.zerobox``` class:
+After which you can target the ```.zerobox``` class with the plugin:
 
     $('a.zerobox').zerobox();
 
