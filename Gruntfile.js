@@ -25,24 +25,24 @@ module.exports = function (grunt) {
             main: {
                 files: [
                     {
-                        src  : ['dist/zerobox.min.js'],
-                        dest : 'dist/zerobox.v<%= pkg.version %>.min.js'
+                        src : ['dist/zerobox.min.js'],
+                        dest: 'dist/zerobox.v<%= pkg.version %>.min.js'
                     }
                 ]
             }
         },
 
         jshint: {
-            files : ['Gruntfile.js', 'zerobox.js'],
-            options : {
-                globals : {
-                    jQuery : true
+            files: ['Gruntfile.js', 'zerobox.js'],
+            options: {
+                globals: {
+                    jQuery: true
                 }
             }
         },
 
         bumpup: {
-            files: ['package.json', 'bower.json', "zerobox.jquery.json"]
+            files: ['package.json', 'bower.json', 'zerobox.jquery.json']
         },
 
         jsdoc: {
