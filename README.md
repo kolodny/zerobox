@@ -35,7 +35,7 @@ After which you can run Grunt tasks to do testing, releasing and building:
 
     $ grunt [task]
 
-Where ```[task]``` is the task you want to run. Available tasks are ```jsdoc```, ```test```, ```build``` and ```release [major|minor|patch|build]```.
+Where ```[task]``` is the task you want to run. Available tasks are ```jsdoc```, ```test```, ```build``` and ```release:[major|minor|patch|build]```.
 
 ## License
 
