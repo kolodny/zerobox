@@ -56,7 +56,7 @@ module.exports = function (grunt) {
 
         tagrelease: {
             file: 'package.json',
-            commit:  false,
+            commit:  true,
             message: 'Marks v%version%.',
             prefix:  '',
             annotate: true
